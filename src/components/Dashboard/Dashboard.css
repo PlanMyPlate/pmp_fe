@@ -1,0 +1,30 @@
+h1 {
+  padding: 1em;
+  text-align: center;
+}
+
+button {
+  padding: 0.75em;
+  color: white;
+  background-color: rgba(137, 64, 137, 0.807);
+  border-radius: 1em;
+  border-style: solid;
+  border-color: black;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.search-button {
+  margin-right: 5em;
+}
+
+.add-button {
+  margin-left: 5em;
+}
