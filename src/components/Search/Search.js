@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import './Search.css';
 
 function Search() {
   const [cuisine, setCuisine] = useState('');
@@ -10,16 +11,17 @@ function Search() {
   }
 
   const handleSubmit = () => {
-    
+
   }
 
   return (
-    <div>
+    <div className="search-form">
       <h1>Search for Recipes</h1>
-      <form onSubmit={handleSubmit}>
+      <form className="form" onSubmit={handleSubmit}>
         <input
           type="text"
-          placeholder="Cuisine"
+          size="35"
+          placeholder="Cuisine -> 'Japanese', 'Italian', e.g."
           onChange={handleChange}
           name="search"
           value={cuisine}
