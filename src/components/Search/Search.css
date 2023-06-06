@@ -8,6 +8,14 @@
   padding: 1em;
 }
 
-button {
-  margin-left: 1em;
+.cuisine-search {
+  margin: auto;
+  width: 50%;
+}
+
+.search-recipe-button {
+  margin: auto;
+  margin-top: 10px;
+  width: 15%;
+  text-align: center;
 }
