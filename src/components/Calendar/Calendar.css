@@ -1,0 +1,29 @@
+.wrapper {
+  width: calc(100% - 30px);
+  border: 1px black solid;
+  margin: 15px;
+  position: relative;
+}
+
+.days-grid {
+  margin-left: 40px;
+}
+
+.day-wrapper {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.each-day {
+
+  padding: 4px;
+  border-bottom: 1px solid black;
+}
+
+.meal {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  margin-left: 5px;
+}
