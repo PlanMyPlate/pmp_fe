@@ -9,13 +9,7 @@
   margin-left: 40px;
 }
 
-.day-wrapper {
-  border: 1px solid black;
-  text-align: center;
-}
-
 .each-day {
-
   padding: 4px;
   border-bottom: 1px solid black;
 }
