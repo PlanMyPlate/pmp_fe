@@ -19,14 +19,15 @@ function Search() {
       <h1>Search for Recipes</h1>
       <form className="form" onSubmit={handleSubmit}>
         <input
+          className="cuisine-search"
           type="text"
           size="35"
-          placeholder="Cuisine -> 'Japanese', 'Italian', e.g."
+          placeholder="Cuisine, Diet, or Ingredients..."
           onChange={handleChange}
           name="search"
           value={cuisine}
         />
-        <button type="submit" onClick={handleSubmit}>Search</button>
+        <button className="search-recipe-button" type="submit" onClick={handleSubmit}>Search</button>
       </form>
     </div>
   )
