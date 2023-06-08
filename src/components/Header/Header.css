@@ -4,9 +4,20 @@
 
 header {
   background-color: #b5d7a8;
+  display: flex;
+}
+
+nav {
+  margin: 5px;
+}
+
+.header-link {
+  text-decoration: none;
+  font-size: small;
 }
 
 img {
+  margin-right: auto;
   width: 15%;
   display: flex;
 }
