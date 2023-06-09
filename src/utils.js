@@ -1,5 +1,6 @@
 export const meals = ['Breakfast', 'Lunch', 'Dinner']
 export const DAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat']
+export const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 
 export const areDatesSame = (first, second) => {
   return first.getFullYear() === second.getFullYear() &&

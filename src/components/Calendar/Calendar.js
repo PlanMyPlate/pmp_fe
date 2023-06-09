@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {meals, DAYS, addDateBy, areDatesSame, getSunday} from '../../utils';
+import {meals, DAYS, MONTHS, addDateBy, areDatesSame, getSunday} from '../../utils';
 import './Calendar.css';
 
 
@@ -8,9 +8,7 @@ const Calendar = () => {
   return (
     <>
     <FlexBox>
-      <p>from: {getSunday()?.toDateString()}</p>
-      <p>today: {new Date().toDateString()}</p>
-      <p>to: {addDateBy(getSunday(), 6).toDateString()}</p>
+      <h2>{MONTHS[new Date().getUTCMonth()]} Plates</h2>
     </FlexBox>
     <div className="wrapper">
       <HGrid className="main-hgrid" first={"30px"} cols={1}>
@@ -22,10 +20,11 @@ const Calendar = () => {
         <HGrid className="days-grid" cols={7}>
           {
             DAYS.map((day, index) => (
-            <DayWrapper isToday={
+            <DayWrapper 
+            isToday={
               areDatesSame(new Date(), addDateBy(getSunday(), index))
             }>
-              <p className="each-day">{day}</p>
+                <p className="each-day">{day} - {addDateBy(getSunday(), index).getUTCMonth() + 1}/{addDateBy(getSunday(), index).getUTCDate()}</p>
             </DayWrapper>
             ))
           }
