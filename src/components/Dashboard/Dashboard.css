@@ -3,13 +3,12 @@
   text-align: center;
 }
 
-button {
+.search-button, .add-button {
   padding: 0.75em;
   color: white;
   background-color: rgba(137, 64, 137, 0.807);
   border-radius: 1em;
-  border-style: solid;
-  border-color: black;
+  border: solid black 0px;
 }
 
 button:hover {

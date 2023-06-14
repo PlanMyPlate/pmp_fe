@@ -21,3 +21,22 @@
   font-size: 12px;
   margin-left: 5px;
 }
+
+.today-button {
+  margin: auto;
+  display: flex;
+  margin-top: 10px;
+  padding: 0.50em;
+  font-size: 0.75rem;
+  color: white;
+  background-color: rgba(137, 64, 137, 0.807);
+  border-radius: 1em;
+  border: solid black 0px;
+}
+
+.current-year {
+  text-align: right;
+  margin-right: 1.2rem;
+  font-size: 0.75rem;
+  color: #35bcff;
+}
