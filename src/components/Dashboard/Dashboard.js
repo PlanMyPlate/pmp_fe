@@ -1,11 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Dashboard.css';
+import Calendar from '../Calendar/Calendar';
 
 function Dashboard() {
   return (
     <div>
-      <h1>My Dashboard</h1>
+      <h1 className="dashboard-title">My Dashboard</h1>
+      <Calendar />
       <div className="buttons">
         <Link to="/search">
           <button className="search-button">Search for Recipes</button>

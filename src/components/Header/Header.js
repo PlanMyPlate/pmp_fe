@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
 import logo from '../../images/pmp-logo.png';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 function Header() {
   const navigate = useNavigate();
@@ -14,6 +14,9 @@ function Header() {
   return (
     <header>
       <img src={logo} alt="PMP logo" onClick={handleClick}/>
+      <nav>
+        <Link to="/dashboard" className="header-link">Dashboard</Link>
+      </nav>
     </header>
   )
 };
