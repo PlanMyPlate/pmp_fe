@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './Search.css';
+import RecipeCard from '../RecipeCard/RecipeCard'
 
 function Search() {
   const [formData, setFormData] = useState(
@@ -48,7 +49,10 @@ function Search() {
 
   const allRecipes = searchedRecipes.map(recipe => {
     return (
-      <h1>{recipe.title}</h1>
+      <RecipeCard 
+        key={recipe.id}
+        {...recipe}
+      />
     )
   })
 
@@ -194,8 +198,9 @@ function Search() {
 
         <button className="search-recipe-button" type="submit" onClick={handleSubmit}>Search</button>
       </form>
-      {allRecipes}
-      {console.log(searchedRecipes)}
+      <section className="recipe-list">
+        {allRecipes}
+      </section>
     </div>
   )
 };
