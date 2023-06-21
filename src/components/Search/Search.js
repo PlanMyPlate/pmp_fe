@@ -87,6 +87,7 @@ function Search() {
 
         {/* CARBS */}
         <input
+          class="input-number"
           type="number"
           min="0"
           max="100"
@@ -97,6 +98,7 @@ function Search() {
           value={formData.minCarbs}
         />
         <input
+          class="input-number"
           type="number"
           min="0"
           max="500"
@@ -109,6 +111,7 @@ function Search() {
 
         {/* CALORIES */}
         <input
+          class="input-number"
           type="number"
           min="0"
           max="100"
@@ -119,6 +122,7 @@ function Search() {
           value={formData.minCalories}
         />
         <input
+          class="input-number"
           type="number"
           min="0"
           max="500"
@@ -131,6 +135,7 @@ function Search() {
 
         {/* PROTEIN */}
         <input
+          class="input-number"
           type="number"
           min="0"
           max="100"
@@ -141,6 +146,7 @@ function Search() {
           value={formData.minProtein}
         />
         <input
+          class="input-number"
           type="number"
           min="0"
           max="500"
@@ -153,6 +159,7 @@ function Search() {
 
         {/* FIBER */}
         <input
+          class="input-number"
           type="number"
           min="0"
           max="100"
@@ -163,6 +170,7 @@ function Search() {
           value={formData.minFiber}
         />
         <input
+          class="input-number"
           type="number"
           min="0"
           max="500"
@@ -175,6 +183,7 @@ function Search() {
 
         {/* SUGAR */}
         <input
+          class="input-number"
           type="number"
           min="0"
           max="100"
@@ -185,6 +194,7 @@ function Search() {
           value={formData.minSugar}
         />
         <input
+          class="input-number"
           type="number"
           min="0"
           max="500"
@@ -198,9 +208,9 @@ function Search() {
 
         <button className="search-recipe-button" type="submit" onClick={handleSubmit}>Search</button>
       </form>
-      <section className="recipe-list">
+      <div>
         {allRecipes}
-      </section>
+      </div>
     </div>
   )
 };

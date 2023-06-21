@@ -11,7 +11,7 @@
   border: solid black 0px;
 }
 
-button:hover {
+.add-buton:hover, .search-button:hover {
   cursor: pointer;
 }
 

@@ -28,8 +28,9 @@ function RecipeForm() {
   return (
     <div>
       <h1>Add a Recipe</h1>
-      <form onSubmit={handleSubmit}>
-        <input 
+      <form class="recipe-form" onSubmit={handleSubmit}>
+        <input
+          class="recipe-input-form" 
           type="text"
           name="name"
           placeholder="Name of Recipe"
@@ -37,6 +38,7 @@ function RecipeForm() {
           value={recipe.name}
         /><br></br>
         <textarea
+          class="recipe-form-textarea"
           type="textarea"
           rows="5"
           cols="30"
@@ -46,6 +48,7 @@ function RecipeForm() {
           value={recipe.ingredients}
         /><br></br>
         <textarea
+          class="recipe-form-textarea"
           type="textarea"
           rows="5"
           cols="30"
@@ -55,6 +58,7 @@ function RecipeForm() {
           value={recipe.instructions}
         /><br></br>
         <input
+          class="recipe-input-form"
           type="text"
           name="imageUrl"
           size="25"

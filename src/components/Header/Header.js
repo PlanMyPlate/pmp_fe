@@ -13,7 +13,7 @@ function Header() {
 
   return (
     <header>
-      <img src={logo} alt="PMP logo" onClick={handleClick}/>
+      <img class="pmp-logo" src={logo} alt="PMP logo" onClick={handleClick}/>
       <nav>
         <Link to="/dashboard" className="header-link">Dashboard</Link>
       </nav>
