@@ -6,7 +6,7 @@ function RecipeShow() {
 
   return (
     <div>
-      {Number(id) === 1 ? <h1>Recipe Show</h1> : <h1>Not 1 ID</h1>}
+      <h1>hehehe</h1>
     </div>
   )
 };

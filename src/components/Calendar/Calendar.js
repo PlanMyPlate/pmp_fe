@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Button from 'react-bootstrap/Button';
 import styled from 'styled-components';
 import {meals, DAYS, MONTHS, addDateBy, areDatesSame, getSunday} from '../../utils';
 import './Calendar.css';
@@ -17,7 +18,7 @@ const Calendar = () => {
       <h2>{MONTHS[sundayDate.getUTCMonth()]} Plates</h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <button onClick={nextWeek}><ion-icon name="arrow-forward-outline"></ion-icon></button>
     </FlexBox>
-    {sundayDate.getDate() !== getSunday().getDate() && <button className="today-button" onClick={orgWeek}>Today</button>}
+      {sundayDate.getDate() !== getSunday().getDate() && <div className="today-button"><Button variant="outline-info" size="sm" onClick={orgWeek}>Today</Button></div>}
     <div className="wrapper">
       <HGrid className="main-hgrid" first={"30px"} cols={1}>
         <VGrid rows={3}>

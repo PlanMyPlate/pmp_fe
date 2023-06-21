@@ -11,20 +11,12 @@
   border: solid black 0px;
 }
 
-button:hover {
+.add-buton:hover, .search-button:hover {
   cursor: pointer;
 }
 
 .buttons {
   display: flex;
-  justify-content: center;
-  margin-top: 8em;
-}
-
-.search-button {
-  margin-right: 5em;
-}
-
-.add-button {
-  margin-left: 5em;
+  justify-content: space-around;
+  margin-top: 3em;
 }

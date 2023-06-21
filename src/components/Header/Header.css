@@ -16,12 +16,12 @@ nav {
   font-size: small;
 }
 
-img {
+.pmp-logo {
   margin-right: auto;
   width: 15%;
   display: flex;
 }
 
-img:hover {
+.pmp-logo:hover {
   cursor: pointer;
 }
