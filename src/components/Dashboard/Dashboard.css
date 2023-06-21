@@ -17,14 +17,6 @@
 
 .buttons {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   margin-top: 3em;
-}
-
-.search-button {
-  margin-right: 5em;
-}
-
-.add-button {
-  margin-left: 5em;
 }

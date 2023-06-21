@@ -208,7 +208,7 @@ function Search() {
 
         <button className="search-recipe-button" type="submit" onClick={handleSubmit}>Search</button>
       </form>
-      <div>
+      <div class="recipe-list">
         {allRecipes}
       </div>
     </div>
