@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css';
-import logo from '../../images/pmp-logo.png';
+import logo from '../../images/pmp-logo-transparent.png';
 import { useNavigate, Link, useLocation } from 'react-router-dom';
 
 function Header() {
