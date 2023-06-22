@@ -35,7 +35,7 @@ function Search() {
   }
 
   async function fetchData() {
-    const response = await window.fetch("https://08d2cfed-d53a-4f17-8dea-f78653f8e300.mock.pstmn.io/search?query=chicken", {
+    const response = await window.fetch(`${process.env.REACT_APP_MOCK_SERVER_URL}/search?query=chicken`, {
       method: 'GET'
     })
     const jsonData = await response.json();
