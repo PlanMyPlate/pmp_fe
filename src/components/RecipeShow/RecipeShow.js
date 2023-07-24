@@ -9,7 +9,7 @@ function RecipeShow() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await window.fetch(`https://api.spoonacular.com/recipes/${id}/information?apiKey=${process.env.REACT_APP_SPOONACULAR_API_KEY}`);
+        const response = await window.fetch(`${process.env.REACT_APP_MOCK_SERVER_URL}/recipes/${id}/information`);
         const data = await response.json();
         setRecipe(data);
         console.log(recipe);
@@ -19,12 +19,24 @@ function RecipeShow() {
       setIsLoading(false);
     };
     fetchData();
-    }, [id]);
+    }, [id, recipe]);
 
   return (
     <div>
       {isLoading ? (<p>Loading...</p>) : (
-      <h1>{recipe.title}</h1>
+      <div>
+        <h2>{recipe.title}</h2>
+        <p>{recipe.readyInMinutes}</p>
+        <img src={recipe.image} alt={recipe.title}/>
+        <p>{recipe.servings}</p>
+        <p>{recipe.sourceUrl}</p>
+        {recipe.extendedIngredients.map(ing => {
+          return(
+            <p>{ing.originalName}</p>
+          )
+        })}
+        {/* <p>{recipe.analyzedInstructions}</p> */}
+      </div>
       )}
     </div>
   )
