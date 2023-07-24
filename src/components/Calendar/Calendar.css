@@ -34,3 +34,7 @@
   font-size: 0.75rem;
   color: #35bcff;
 }
+
+.month-title {
+  margin-bottom: 0;
+}
